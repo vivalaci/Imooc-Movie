@@ -1,0 +1,25 @@
+{
+  "name": "MOOC Movie",
+  "authors": [
+    "vivalaci <vivalaci@qq.com>"
+  ],
+  "description": "just a learning code",
+  "main": "",
+  "keywords": [
+    "mooc"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^3.3.7"
+  }
+}

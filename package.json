@@ -1,0 +1,26 @@
+{
+  "name": "mooc",
+  "version": "1.0.0",
+  "description": "mooc code",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bower": "^1.8.2",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.7",
+    "serve-static": "^1.13.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mooc",
+    "movie"
+  ],
+  "author": "",
+  "license": "ISC"
+}

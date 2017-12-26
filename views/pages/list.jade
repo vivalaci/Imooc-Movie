@@ -1,0 +1,28 @@
+extends ../layout
+block content
+    .container
+        .row
+            table.table.table-hover.table-bordered
+                thead
+                    tr
+                        th 電影名稱
+                        th 導演
+                        th 國家
+                        th 上映年份
+                        th 錄入時間
+                        th 查看
+                        th 更新
+                        th 刪除
+                tbody
+                    each item in movies
+                        tr(class="item-id-#{item._id}")
+                            td #{item.title}
+                            td #{item.doctor}
+                            td #{item.country}
+                            td #{item.year}
+                            td #{moment(item.meta.updateAt).format('DD/MM/YYYY')}
+                            td: a(target="_blank", href="../movie/#{item.id}") 查看
+                            td: a(target="_blank", href="../admin/update/#{item.id}") 修改
+                            td
+                                button.btn.btn-danger.del(type="button", data-id="#{item._id}") 刪除
+    script(src="/static/js/admin.js")
